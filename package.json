@@ -1,0 +1,19 @@
+{
+  "name": "next-compiled-license-checker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "run": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/core": "^4.2.0"
+  },
+  "devDependencies": {
+    "mustache": "^4.2.0"
+  }
+}
