@@ -91,9 +91,20 @@ const handler = async () => {
       if (err) throw err;
 
       const licenseTypes = new Set(packages.map((pkg) => {
-        const packageJsonParsed = pkg.packageJson ? JSON.parse(pkg.packageJson) : {};
+        try {
+          const packageJsonParsed = pkg.packageJson
+            ? JSON.parse(pkg.packageJson)
+            : {};
+          return (
+            packageJsonParsed?.license?.type ||
+            packageJsonParsed?.license ||
+            'Unknown'
+          );
+        } catch (error) {
+          // do nothing
+        }
 
-        return packageJsonParsed?.license || 'Unknown';
+        return 'Unknown';
       }))
       
       const output = Mustache.render(data.toString(), {
