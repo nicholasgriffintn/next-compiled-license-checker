@@ -9,9 +9,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "@octokit/core": "^4.2.0"
+    "@octokit/core": "^5.0.1"
   },
   "devDependencies": {
     "mustache": "^4.2.0"
