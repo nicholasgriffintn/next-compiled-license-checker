@@ -8,9 +8,9 @@ Take a look below:
 
 ## Stats
 
-Count of packages in the Next compiled folder: 136.
+Count of packages in the Next compiled folder: 137.
 
-Type of licenses: Unknown, ISC, MIT, Apache-2.0, BSD-3-Clause, CC0-1.0, BSD-2-Clause
+Type of licenses: Unknown, BSD-3-Clause, MIT, CC0-1.0, ISC, Apache-2.0, BSD-2-Clause
 
 Location of folders list: `./next-compiled-folders.json`
 Location of licenses list: `./next-compiled-licenses.json`
